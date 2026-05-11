@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Математика в комп'ютерних іграх</title>
+    <style>
+        body { font-family: Arial; background:#0d0d0d; color:#e6e6e6; margin:0; }
+        nav { background:#111; padding:15px; text-align:center; position:sticky; top:0; }
+        nav a { color:#00c8ff; margin:0 15px; text-decoration:none; font-size:18px; cursor:pointer; }
+        nav a:hover { color:#fff; }
+        section { padding:40px 10%; display:none; }
+        .active { display:block; }
+        .block { background:#1a1a1a; padding:25px; margin:20px 0; border-left:4px solid #00c8ff; border-radius:6px; }
+        img { width:100%; border-radius:8px; margin-top:15px; }
+        header { background:#1a1a1a; padding:50px; text-align:center; border-bottom:3px solid #00c8ff; }
+        h1 { margin:0; color:#00c8ff; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Математика в комп'ютерних іграх</h1>
+    <p>Фізика • 3D‑графіка • ШІ • Баланс • Галерея</p>
+</header>
+
+<nav>
+    <a onclick="openTab('home')">Головна</a>
+    <a onclick="openTab('physics')">Фізика</a>
+    <a onclick="openTab('graphics')">3D‑графіка</a>
+    <a onclick="openTab('ai')">ШІ</a>
+    <a onclick="openTab('balance')">Баланс</a>
+    <a onclick="openTab('gallery')">Галерея</a>
+</nav>
+
+<!-- ГОЛОВНА -->
+<section id="home" class="active">
+    <h2>Про проєкт</h2>
+    <div class="block">
+        <p>Комп’ютерні ігри — це поєднання мистецтва, програмування та математики. 
+        Від руху персонажів до освітлення, від штучного інтелекту до економіки — 
+        всюди працюють формули, рівняння та алгоритми.</p>
+    </div>
+</section>
+
+<!-- ФІЗИКА -->
+<section id="physics">
+    <h2>Фізика в іграх</h2>
+
+    <div class="block">
+        <h3>Координати та вектори</h3>
+        <p>Усі об’єкти в іграх мають координати (x, y, z). Вектори визначають напрямок руху.</p>
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/17/44/geometry-2027784_1280.png">
+    </div>
+
+    <div class="block">
+        <h3>Гравітація та стрибки</h3>
+        <p>Стрибок персонажа — це парабола. Формула: y = v₀t − ½gt².</p>
+        <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/jump-1294009_1280.png">
+    </div>
+
+    <div class="block">
+        <h3>Колізії</h3>
+        <p>Гра перевіряє перетин фігур — це чиста геометрія.</p>
+        <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/collision-309645_1280.png">
+    </div>
+</section>
+
+<!-- 3D ГРАФІКА -->
+<section id="graphics">
+    <h2>3D‑графіка та моделювання</h2>
+
+    <div class="block">
+        <h3>Полігональні моделі</h3>
+        <p>Усі 3D‑об’єкти складаються з трикутників — полігонів.</p>
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/04/17/mesh-1865372_1280.png">
+    </div>
+
+    <div class="block">
+        <h3>Матричні перетворення</h3>
+        <p>Обертання, масштабування та переміщення виконуються через матриці 4×4.</p>
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/17/44/geometry-2027784_1280.png">
+    </div>
+
+    <div class="block">
+        <h3>Освітлення</h3>
+        <p>Кути між векторами світла та поверхні визначають тіні та відблиски.</p>
+        <img src="https://cdn.pixabay.com/photo/2017/08/30/07/52/light-2696460_1280.jpg">
+    </div>
+</section>
+
+<!-- ШІ -->
+<section id="ai">
+    <h2>Штучний інтелект у іграх</h2>
+
+    <div class="block">
+        <h3>Пошук шляху (A*)</h3>
+        <p>Алгоритм A* дозволяє ворогам знаходити найкоротший шлях.</p>
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/17/44/maze-2027786_1280.png">
+    </div>
+
+    <div class="block">
+        <h3>Дерева рішень</h3>
+        <p>NPC приймають рішення на основі логічних умов.</p>
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/17/44/network-2027785_1280.png">
+    </div>
+
+    <div class="block">
+        <h3>Ймовірність</h3>
+        <p>Випадкові події — це контрольовані математичні ймовірності.</p>
+        <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/dice-1293996_1280.png">
+    </div>
+</section>
+
+<!-- БАЛАНС -->
+<section id="balance">
+    <h2>Ігровий баланс</h2>
+
+    <div class="block">
+        <h3>Параметри зброї</h3>
+        <p>Урон, швидкість атаки, шанс криту — усе це формули.</p>
+        <img src="https://cdn.pixabay.com/photo/2014/04/03/10/32/sword-309644_1280.png">
+    </div>
+
+    <div class="block">
+        <h3>Економіка</h3>
+        <p>Ціни, нагороди, шанси дропа — статистичні розрахунки.</p>
+        <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/coins-1293999_1280.png">
+    </div>
+</section>
+
+<!-- ГАЛЕРЕЯ -->
+<section id="gallery">
+    <h2>Галерея</h2>
+
+    <img src="https://cdn.pixabay.com/photo/2017/01/31/17/44/geometry-2027784_1280.png">
+    <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/jump-1294009_1280.png">
+    <img src="https://cdn.pixabay.com/photo/2017/01/31/17/44/maze-2027786_1280.png">
+    <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/dice-1293996_1280.png">
+</section>
+
+<script>
+function openTab(tabName) {
+    document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+    document.getElementById(tabName).classList.add("active");
+}
+</script>
+
+</body>
+</html>
